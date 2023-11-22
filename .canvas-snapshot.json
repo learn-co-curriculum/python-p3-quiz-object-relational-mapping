@@ -4,7 +4,7 @@
     "title": "Object-Relational Mapping Quiz",
     "html_url": "https://learning.flatironschool.com/courses/7559/quizzes/53500",
     "mobile_url": "https://learning.flatironschool.com/courses/7559/quizzes/53500?force_user=1&persist_headless=1",
-    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"python-p3-quiz-object-relational-mapping\"></div>\n<header class=\"fis-header\"><a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/python-p3-quiz-object-relational-mapping/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a></header>\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again.</p>\n<p>If you don't know the answer to a question, please do not guess. Instead, select \"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
+    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"python-p3-quiz-object-relational-mapping\"></div>\n<header class=\"fis-header\">\n  <a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/python-p3-quiz-object-relational-mapping/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a>\n</header>\n\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide.\nNote any answers that were marked incorrect, so you can study the relevant\nmaterial and try this quiz again.</p>\n\n<p>If you don't know the answer to a question, please do not guess. Instead, select\n\"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
     "quiz_type": "assignment",
     "time_limit": null,
     "timer_autosubmit_disabled": false,
@@ -71,7 +71,7 @@
     "only_visible_to_overrides": false,
     "assignment_group_id": 25101,
     "show_correct_answers_last_attempt": true,
-    "version_number": 4,
+    "version_number": 5,
     "has_access_code": false,
     "post_to_sis": false,
     "migration_id": "gc478d052af9cfd7bc6343809d7eb9f0d",
@@ -203,7 +203,7 @@
       "position": null,
       "question_name": "ORM: Mapping",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>Consider the following code:</p>\n<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"k\">class</span> <span class=\"nc\">Car</span><span class=\"p\">:</span>\n  <span class=\"k\">def</span> <span class=\"nf\">__init__</span> <span class=\"p\">(</span><span class=\"nb\">self</span><span class=\"p\">,</span> <span class=\"n\">make</span><span class=\"p\">,</span> <span class=\"n\">model</span><span class=\"p\">):</span>\n    <span class=\"nb\">self</span><span class=\"p\">.</span><span class=\"nf\">make</span> <span class=\"o\">=</span> <span class=\"n\">make</span>\n    <span class=\"nb\">self</span><span class=\"p\">.</span><span class=\"nf\">model</span> <span class=\"o\">=</span> <span class=\"n\">model</span>\n</code></pre></div>\n<p>In order to \"map\" this <code>Car</code> class to a <code>cars</code> database table, what needs to be\ndone first?</p>",
+      "question_text": "<p>Consider the following code:</p>\n<div class=\"highlight\"><pre class=\"highlight python\"><code><span class=\"k\">class</span> <span class=\"nc\">Car</span><span class=\"p\">:</span>\n  <span class=\"k\">def</span> <span class=\"nf\">__init__</span> <span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">make</span><span class=\"p\">,</span> <span class=\"n\">model</span><span class=\"p\">):</span>\n    <span class=\"bp\">self</span><span class=\"p\">.</span><span class=\"n\">make</span> <span class=\"o\">=</span> <span class=\"n\">make</span>\n    <span class=\"bp\">self</span><span class=\"p\">.</span><span class=\"n\">model</span> <span class=\"o\">=</span> <span class=\"n\">model</span>\n</code></pre></div>\n<p>In order to \"map\" this <code>Car</code> class to a <code>cars</code> database table, what needs to be\ndone first?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -262,7 +262,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7559/pages/v1-mapping-database-records-to-python-objects?module_item_id=g1ba1cadbb4dc31c512d279075f02de30\">Mapping Database Records to Python Objects</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 2155,
+          "id": "2155",
           "text": "",
           "comments": "",
           "comments_html": "<p>Exactly! If the class is called Cat, the table should be called cats.</p>",
@@ -270,7 +270,7 @@
           "html": "<p>Create a table with the same name as the class, but pluralized</p>"
         },
         {
-          "id": 1005,
+          "id": "1005",
           "text": "",
           "comments": "",
           "comments_html": "<p>So true! We need the columns and attributes to match, so that we know which data\nwe're manipulating.</p>",
@@ -278,7 +278,7 @@
           "html": "<p>Match the names of the table's columns to the attributes&nbsp;of the class</p>"
         },
         {
-          "id": 3738,
+          "id": "3738",
           "text": "",
           "comments": "",
           "comments_html": "<p>Not quite. Remember that each row in the table is represented by an object, or\nan instance of a class. What might that mean?</p>",
@@ -286,7 +286,7 @@
           "html": "<p>Match the names of the table's columns to class variables</p>"
         },
         {
-          "id": 8185,
+          "id": "8185",
           "text": "",
           "comments": "",
           "comments_html": "<p>Not quite. The table name and class name should be similar, but not exactly the\nsame.</p>",
@@ -294,7 +294,7 @@
           "html": "<p>Create a table with the exact same name as the class</p>"
         },
         {
-          "id": 1525,
+          "id": "1525",
           "text": "",
           "comments": "",
           "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
@@ -327,17 +327,17 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7559/assignments/263663?module_item_id=gc7052c1ec73a632ce1c697cca3431680\">Mapping Python Classes to a Database</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 8170,
+          "id": 2214,
           "text": "",
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"k\">class</span> <span class=\"nc\">Car</span><span class=\"p\">:</span>\n\n  <span class=\"k\">def</span> <span class=\"nf\">__init__</span> <span class=\"p\">(</span><span class=\"nb\">self</span><span class=\"p\">,</span> <span class=\"n\">make</span><span class=\"p\">,</span> <span class=\"n\">model</span><span class=\"p\">):</span>\n    <span class=\"nb\">self</span><span class=\"p\">.</span><span class=\"nf\">id</span> <span class=\"o\">=</span> <span class=\"no\">None</span> <span class=\"err\">&nbsp;</span> <span class=\"err\">&nbsp;</span><span class=\"nb\">self</span><span class=\"p\">.</span><span class=\"nf\">make</span> <span class=\"o\">=</span> <span class=\"n\">make</span>\n    <span class=\"nb\">self</span><span class=\"p\">.</span><span class=\"nf\">model</span> <span class=\"o\">=</span> <span class=\"n\">model</span>\n</code></pre></div>",
+          "html": "<div class=\"highlight\"><pre class=\"highlight python\"><code><span class=\"k\">class</span> <span class=\"nc\">Car</span><span class=\"p\">:</span>\n\n  <span class=\"k\">def</span> <span class=\"nf\">__init__</span> <span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">make</span><span class=\"p\">,</span> <span class=\"n\">model</span><span class=\"p\">):</span>\n    <span class=\"bp\">self</span><span class=\"p\">.</span><span class=\"nb\">id</span> <span class=\"o\">=</span> <span class=\"bp\">None</span>\n    <span class=\"bp\">self</span><span class=\"p\">.</span><span class=\"n\">make</span> <span class=\"o\">=</span> <span class=\"n\">make</span>\n    <span class=\"bp\">self</span><span class=\"p\">.</span><span class=\"n\">model</span> <span class=\"o\">=</span> <span class=\"n\">model</span>\n</code></pre></div>",
           "comments": "",
           "comments_html": "<p>Correct! The id is set to <code>None</code> because it should only be set after the record\nis saved to the database.</p>",
           "weight": 100.0
         },
         {
-          "id": 4678,
+          "id": 7329,
           "text": "",
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"k\">class</span> <span class=\"nc\">Car</span><span class=\"p\">:</span>\n  <span class=\"k\">def</span> <span class=\"nf\">__init__</span> <span class=\"p\">(</span><span class=\"nb\">self</span><span class=\"p\">,</span> <span class=\"n\">make</span><span class=\"p\">,</span> <span class=\"n\">model</span><span class=\"p\">,</span> <span class=\"nb\">id</span><span class=\"p\">):</span>\n    <span class=\"nb\">self</span><span class=\"p\">.</span><span class=\"nf\">id</span> <span class=\"o\">=</span> <span class=\"nb\">id</span>\n    <span class=\"nb\">self</span><span class=\"p\">.</span><span class=\"nf\">make</span> <span class=\"o\">=</span> <span class=\"n\">make</span>\n    <span class=\"nb\">self</span><span class=\"p\">.</span><span class=\"nf\">model</span> <span class=\"o\">=</span> <span class=\"n\">model</span>\n</code></pre></div>",
+          "html": "<div class=\"highlight\"><pre class=\"highlight python\"><code><span class=\"k\">class</span> <span class=\"nc\">Car</span><span class=\"p\">:</span>\n  <span class=\"k\">def</span> <span class=\"nf\">__init__</span> <span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">make</span><span class=\"p\">,</span> <span class=\"n\">model</span><span class=\"p\">,</span> <span class=\"nb\">id</span><span class=\"p\">):</span>\n    <span class=\"bp\">self</span><span class=\"p\">.</span><span class=\"nb\">id</span> <span class=\"o\">=</span> <span class=\"nb\">id</span>\n    <span class=\"bp\">self</span><span class=\"p\">.</span><span class=\"n\">make</span> <span class=\"o\">=</span> <span class=\"n\">make</span>\n    <span class=\"bp\">self</span><span class=\"p\">.</span><span class=\"n\">model</span> <span class=\"o\">=</span> <span class=\"n\">model</span>\n</code></pre></div>",
           "comments": "",
           "comments_html": "<p>Hmm, something is missing. Take a look at the id. The id shouldn't be saved\nuntil after the record has been saved to the database.</p>",
           "weight": 0.0
@@ -376,7 +376,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7559/assignments/263663?module_item_id=gc7052c1ec73a632ce1c697cca3431680\">Mapping Python Classes to a Database</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 964,
+          "id": "964",
           "text": "",
           "comments": "",
           "comments_html": "<p>Yes! This makes our code more modular, so we can choose to create objects or\nsave to the database. This is much more flexible than coupling both functions in\nthe same method.</p>",
@@ -384,7 +384,7 @@
           "html": "<p>We don't want to couple the creation of objects with saving records to a\ndatabase</p>"
         },
         {
-          "id": 5693,
+          "id": "5693",
           "text": "",
           "comments": "",
           "comments_html": "<p>Exactly! We may need to manipulate those objects after certain tasks have run,\nand then save them.</p>",
@@ -392,7 +392,7 @@
           "html": "<p>We might need to create objects without saving them to the database</p>"
         },
         {
-          "id": 7975,
+          "id": "7975",
           "text": "",
           "comments": "",
           "comments_html": "<p>Not quite. We can do both of these things in a method if we want.</p>",
@@ -400,7 +400,7 @@
           "html": "<p>We can't set the attributes and save the record in the same method</p>"
         },
         {
-          "id": 2845,
+          "id": "2845",
           "text": "",
           "comments": "",
           "comments_html": "<p>We do have reasons, though this is a convention.</p>",
@@ -408,7 +408,7 @@
           "html": "<p>There's no real reason. It's just a convention</p>"
         },
         {
-          "id": 4744,
+          "id": "4744",
           "text": "",
           "comments": "",
           "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
@@ -447,7 +447,7 @@
           "right": "Database table",
           "comments": "",
           "comments_html": "",
-          "match_id": 3770
+          "match_id": 1988
         },
         {
           "id": "8873",
@@ -456,7 +456,7 @@
           "right": "Table row",
           "comments": "",
           "comments_html": "",
-          "match_id": 700
+          "match_id": 3556
         },
         {
           "id": "7035",
@@ -465,7 +465,7 @@
           "right": "Table column",
           "comments": "",
           "comments_html": "",
-          "match_id": 6520
+          "match_id": 3428
         },
         {
           "id": "253",
@@ -474,7 +474,7 @@
           "right": "Table cell",
           "comments": "",
           "comments_html": "",
-          "match_id": 5947
+          "match_id": 9948
         }
       ],
       "variables": null,
@@ -484,19 +484,19 @@
       "matches": [
         {
           "text": "Database table",
-          "match_id": 3770
+          "match_id": 1988
         },
         {
           "text": "Table row",
-          "match_id": 700
+          "match_id": 3556
         },
         {
           "text": "Table column",
-          "match_id": 6520
+          "match_id": 3428
         },
         {
           "text": "Table cell",
-          "match_id": 5947
+          "match_id": 9948
         }
       ],
       "matching_answer_incorrect_matches": ""
@@ -568,7 +568,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7559/pages/defining-object-relational-mapping\">Defining Object-Relational Mapping</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 2409,
+          "id": "2409",
           "text": "",
           "comments": "",
           "comments_html": "<p>Right! Abstraction is a very powerful tool that can make it much easier to grow\nour applications.</p>",
@@ -576,7 +576,7 @@
           "html": "<p>It allows us to abstract common database tasks into methods.</p>"
         },
         {
-          "id": 4168,
+          "id": "4168",
           "text": "",
           "comments": "",
           "comments_html": "<p>Right! It's quite convenient to have a Python class that knows how to insert\nrecords into SQL rather than having to write that code out by hand.</p>",
@@ -584,7 +584,7 @@
           "html": "<p>It cuts down on repetitive code.</p>"
         },
         {
-          "id": 5055,
+          "id": "5055",
           "text": "",
           "comments": "",
           "comments_html": "<p>Bingo! This pattern is a very common way to communicate with databases, and\nfollowing these conventions makes it easier to add more features as our\napplications grow by giving us a clear design to follow.</p>",
@@ -592,7 +592,7 @@
           "html": "<p>It sets up a consistent, logical relationship between object-oriented code and\ndatabase tables.</p>"
         },
         {
-          "id": 5920,
+          "id": "5920",
           "text": "",
           "comments": "",
           "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
